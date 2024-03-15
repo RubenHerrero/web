@@ -1,0 +1,124 @@
+/* estilos.css */
+
+body {
+    background-color: #F0E8d4;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: 'Roboto', sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* dfsdjfhsd kjfhsdkfhsdkjfh*/
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos básicos */
+.navbar {
+    background: linear-gradient(to right, #F0E8d4, #eee1c0); /* Degradado de izquierda a derecha */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a, .navbar select {
+    padding: 10px;
+    font-size: 16px; /* Ajusta esto según el tamaño de fuente deseado para el menú */
+    vertical-align: middle;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(89, 99, 194, 0.2); /* Efecto hover mejorado */
+    color: black;
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+    .nav-links li {
+        float: none;
+    }
+}
+
+.navbar select {
+    background-color: #F0E8d4; /* Coincide con el color de fondo del menú */
+    color: black; /* Coincide con el color del texto del menú */
+    border: 1px solid #ccc; /* Borde sutil para el selector */
+    border-radius: 5px; /* Bordes redondeados para coincidir con el estilo general */
+    margin-left: 20px; /* Espacio entre el selector y el último enlace del menú */
+    cursor: pointer; /* Indica que el selector es interactivo */
+}
+
+@media screen and (max-width: 600px) {
+    .navbar select {
+        width: 100%; /* Asegura que el selector ocupe el ancho disponible */
+    }
+    .nav-links li, .language-switch {
+        float: none; /* Disposición vertical en móviles */
+        text-align: center; /* Centrado de texto en móviles */
+    }
+}
+
+/* Zona del CSS del footer */
+
+.site-footer {
+    background-color: #F0E8d4; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Si deseas que el footer se mantenga en la parte inferior de la página, incluso con poco contenido: */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > .container {
+    flex: 1;
+}
+
+.site-footer iframe {
+    width: 60%;
+    height: 200px; /* Ajusta esto según necesites */
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .site-footer .container {
+        padding: 20px;
+    }
+
+    .site-footer iframe {
+        height: 150px; /* Más pequeño en dispositivos móviles */
+    }
+}
